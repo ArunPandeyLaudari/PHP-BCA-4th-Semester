@@ -7,14 +7,29 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
-    <h1>Jquery Example</h1>
+    <h1>jQUERY eXAMPLE</h1>
     <button id="btn">Click me</button>
-    <div id="content"></div>
-
+    <p id="demo">Hello World</p>
     <script>
       $(document).ready(function () {
         $("#btn").click(function () {
-          $("#content").text("content is changed");
+          //text
+          // $("#demo").text("Hello World");
+          $("#demo").hide();
+          //toggle
+          // $("#demo").toggle();
+          //fade
+          // $("#demo").fadeOut();
+          //slide up
+          // $("#demo").slideUp();
+          //fade toggle
+          // $("#demo").fadeToggle();
+          //slide toggle
+          // $("#demo").slideToggle();
+          //css
+          // $("#demo").css("color", "red");
+          // $("#demo").css("background-color", "yellow");
+          // $("#demo").css("font-size", "30px");
         });
       });
     </script>
