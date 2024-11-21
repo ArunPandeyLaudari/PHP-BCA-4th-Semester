@@ -2,6 +2,11 @@
 
 $search = $_POST['name'];
 
+if ($search == "") {
+    echo "Please type a name";
+    exit();
+}
+
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -21,5 +26,10 @@ $data = "";
 while ($row = $result->fetch_assoc()) {
     $data .= "Name: " . $row['name'] . "<br>";
 }
+//incldude the no result found
+if ($data == "") {
+    $data = "No result found";
+}
 
 echo $data;
+$conn->close();
