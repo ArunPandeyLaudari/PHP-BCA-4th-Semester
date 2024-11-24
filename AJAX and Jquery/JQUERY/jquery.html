@@ -15,7 +15,7 @@
         $("#btn").click(function () {
           //text
           // $("#demo").text("Hello World");
-          $("#demo").hide();
+          // $("#demo").hide();
           //toggle
           // $("#demo").toggle();
           //fade
@@ -30,6 +30,12 @@
           // $("#demo").css("color", "red");
           // $("#demo").css("background-color", "yellow");
           // $("#demo").css("font-size", "30px");
+          //animatopn
+          // $("#demo").animate({ fontSize: "30px" }, 3000);
+          $("#demo").animate({ opacity: 0.5, left: "+=50" }, 2000);
+
+          //make eg
+          // $("#demo").animate({ left: "250px" }, 2000);
         });
       });
     </script>
